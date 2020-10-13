@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TODO</title>
+        <link type="text/css" href="./style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- Todo List -->
+        <div class="container">
+            <div id="title-bar">Todo List</div>
+            <div class="list-container"></div>    
+            <div class="btn-container">
+                <button id="new-task-btn">+ New task</button>
+            </div>
+        </div>
+
+        <!-- Pop up modal -->
+        <div class="modal">
+            <div class="modal-content">
+                <img src="imgs/close.png" id="close-btn">
+                <br></br>
+                <input type="text" value="" id="input-field" placeholder="Add new item to list" autocomplete="off" autofocus>
+                <br></br>
+                <button id="add-btn">Add</button>
+            </div>
+        </div>
+
+        <!-- Author -->
+        <footer>
+            <div>
+                <a href="https://www.linkedin.com/in/damian-bhatia-001/" target="_blank">
+                    <img src="imgs/linkedin-icon-white.svg" id="icon">
+                </a>
+                <a href="https://github.com/DamianBhatia" target="_blank">
+                    <img src="imgs/github-icon-white.svg" id="icon">
+                </a>
+            </div>
+        </footer>
+
+        <script src="index.js"></script>
+    </body>
+</html>

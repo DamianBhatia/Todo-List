@@ -1,0 +1,160 @@
+body {
+    background-color: #1B262C;
+    font-family: 'Roboto';
+    color: white;
+}
+
+footer {
+    font-family: "Roboto Thin";
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#title-bar {
+    background-color: #3282b8;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px 5px 10px 5px;
+    position: sticky;
+}
+
+#icon {
+    width: 50px;
+    height: auto;
+    float: right;
+    padding-bottom: 10px;
+}
+
+#new-task-btn {
+    background-color:#3282b8;
+    box-shadow: 0px 0px 7px 1px black;
+	border-radius:28px;
+    border: none;
+    outline: none;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+    padding:16px 31px;
+}
+
+#new-task-btn:hover {
+    background-color: #0f4c75;
+}
+
+#trash {
+    width: 17px;
+    height: auto;
+    float: right;
+    mix-blend-mode: multiply;
+}
+
+#trash:hover {
+    cursor: pointer;
+}
+
+#input-field {
+    height: 28px;
+    border-radius: 5px;
+    outline: none;
+    padding: 2px 10px 2px 10px;
+    border: 1px solid #a3a7aa;
+}
+
+#add-btn {
+    background-color:#3282b8;
+    border-radius: 5px;
+    width: 45%;
+    border: none;
+    outline: none;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:14px;
+    padding:16px 31px;
+}
+
+#close-btn {
+    width: 30px;
+    float: right;
+    top: 0px;
+    cursor: pointer;
+}
+
+#checkbox {
+    display: inline;
+    height: 15px;
+    float: left;
+    margin-right: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.container {
+    background-color: white;
+    width: 500px;
+    height: 400px;
+    /* Centers the div */
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    margin: auto;
+    text-align: center; /* center button */
+    box-shadow: 0px 0px 7px 1px black;
+}
+
+.list-container div {
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+}
+
+.list-container {
+    max-height: 345px;
+    overflow-y: auto;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 12% auto auto auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+    height: 20%;
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btn-container {
+    position: absolute;
+    bottom: -30px;
+    width: 500px;
+}
+
+div.list-container div:nth-child(odd) {
+    background: #e8ffff;
+}
